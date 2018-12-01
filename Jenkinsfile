@@ -7,12 +7,12 @@ pipeline {
       }
     }
 
-    // stage('build') {
-    //   steps {
-    //     sh '''
-    //       cat index.html
-    //     '''
-    //   }
-    // }
+    stage('build') {
+      steps {
+        sh '''
+          cat index.html
+        '''
+      }
+    }
   }
 }
