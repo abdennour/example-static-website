@@ -17,9 +17,10 @@ pipeline {
 
     stage('deploy to staging') {
         steps {
-          timeout(time: 5, unit: 'Days') {
+         /* timeout(time: 5, unit: 'Days') {
             input message: 'Approve staging deployment?'
           }
+          */
           echo 'Deploying to staging'
         }
 
